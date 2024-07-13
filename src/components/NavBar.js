@@ -32,9 +32,6 @@ export const NavBar = () => {  //Functional Component
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">
-                    <img src={Logo} alt="" />
-                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className='navbar-toggler-icon'></span>
                 </Navbar.Toggle>
@@ -48,11 +45,9 @@ export const NavBar = () => {  //Functional Component
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src={navIcon1} alt="" /></a>
-                            <a href="#"><img src={navIcon2} alt="" /></a>
-                            <a href="#"><img src={navIcon3} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/rostamsatarzai" target="_blank"><img src={navIcon1} alt="LinkedIn" /></a>
+
                         </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect!</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>
