@@ -41,23 +41,23 @@ export const Skills = () => {
                         <p>Here are some skills I've developed during my Grad scheme at Sky aswell as University</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image"/>
+                                <img src={meter1} alt=""/>
                                 <h5>Business Analysis</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image"/>
+                                <img src={meter2} alt=""/>
                                 <h5>Project Management</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image"/>
+                                <img src={meter3} alt=""/>
                                 <h5>Software Engineering</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image"/>
+                                <img src={meter3} alt=""/>
                                 <h5>Data Analysis</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image"/>
+                                <img src={meter3} alt=""/>
                                 <h5>Product Management/Ownership</h5>
                             </div>
                         </Carousel>
@@ -65,7 +65,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img class="background-image-left" src={colorsharp}></img>
+            <img class="background-image-left" src={colorsharp} alt=""></img>
         </section>
     )
 }

@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import Logo from '../assets/img/logo2.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {  //Functional Component
     const [activeLink, setActiveLink] = useState('home');
@@ -45,7 +42,7 @@ export const NavBar = () => {  //Functional Component
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/rostamsatarzai" target="_blank"><img src={navIcon1} alt="LinkedIn" /></a>
+                            <a href="https://www.linkedin.com/in/rostamsatarzai" target="_blank"  rel="noreferrer nofollow"><img src={navIcon1} alt="LinkedIn" /></a>
 
                         </div>
                     </span>
