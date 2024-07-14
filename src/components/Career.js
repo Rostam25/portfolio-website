@@ -1,7 +1,13 @@
-import { Container, Row, Col, Nav, Tab, } from "react-bootstrap";
-import colorSharp2 from "../assets/img/color-sharp2.png"
+
+import colorSharp from "../assets/img/color-sharp.png"
 import tileb from "../assets/img/tileb.jpg";
-import { ProjectCard } from "./ProjectCard";
+import * as React from 'react';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
 
 
 export const Career = () => {
@@ -26,42 +32,62 @@ export const Career = () => {
 
     return (
         <section className="career" id="career">
-            <Container>
-                <Row>
-                    <Col>
-                        <h2>Career Journey</h2>
-                        <p>Here is my career journey</p>
-                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav varient="pills" defaultActiveKey="/home" className="nav-pills mb-5 justify-content-center" id="pills-tab">
-                                <Nav.Item>
-                                    <Nav.Link eventKey="first">Software Engineering</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">Sky</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                            <Tab.Content>
-                                <Tab.Pane eventKey="first">
-                                    <Row>
-                                        {
-                                            jobs.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                )
-                                            })
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-                            </Tab.Content>
-                        </Tab.Container>
-                    </Col>
-                </Row>
-            </Container>
-            <img className="background-image-right" src={colorSharp2} alt=""></img>
-        </section>
+        <div>
+            <h2>
+                Career Journey
+            </h2>
+            <Timeline position="alternate">
+                
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent><p>Started Computer Science (BSc) at QMUL <em>(September 2020)</em></p></TimelineContent>
+              </TimelineItem>  
 
-    )
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent><p>Lead Generator at TOPdesk <em>(February 2021)</em></p></TimelineContent>
+              </TimelineItem>   
+
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent><p>Customer Advisor at EE <em>(July 2022)</em></p></TimelineContent>
+              </TimelineItem>  
+
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent><p>Graduated BSc Computer Science at QMUL with 2:1 <em>(August 2023)</em></p></TimelineContent>
+              </TimelineItem> 
+
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent><p>Graduate Project Manager at Sky <em>(September 2023 - February 2024)</em></p></TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="secondary"/>
+                </TimelineSeparator>
+                <TimelineContent><p>Graduate Business Analyst at Sky <em>(February 2024 - Current)</em></p></TimelineContent>
+              </TimelineItem>
+
+            </Timeline>
+            <img class="background-image-left" src={colorSharp} alt=""></img>
+        </div>
+        </section>
+          );
 }

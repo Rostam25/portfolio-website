@@ -43,7 +43,6 @@ export const NavBar = () => {  //Functional Component
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/rostamsatarzai" target="_blank"  rel="noreferrer nofollow"><img src={navIcon1} alt="LinkedIn" /></a>
-
                         </div>
                     </span>
                 </Navbar.Collapse>
