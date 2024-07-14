@@ -35,36 +35,7 @@ export const Projects = () => {
     ]
 
     
-    const projectsBA = [
-        {
-            title: "EECC One Touch Switching",
-            description: "Ofcom regulated project at Sky which is to do with the biggest broadband switching adjustment in the last decade",
-            imgUrl: tileb,
-        },
-        {
-            title: "Data Mining",
-            description: "Business Analsysis to identify trends - Using MatPlotLib and other libraries I mined data and scraped data",
-            imgUrl: tileb,
-        },
-        {
-            title: "Database Management",
-            description: "Business/Database Analysis - Using SQL I ran a variety of different queries to fetch data needed from a database",
-            imgUrl: tileb,
-        },
-    ]
-
-    
-    const projectsPM = [
-        {
-            title: "Weather Forecast Web App",
-            description: "Project Manager/Developer role for a weather application group project during university - Programmed using React JS",
-            imgUrl: tileb,
-        },
-        {
-            title: "FDM Employee Portal Web App",
-            description: "Project Manager/Developer role for an employee portal group project for FDM Group during university - Programmed using React JS",
-            imgUrl: tileb,
-        },
+    const projectsSky = [
         {
             title: "EECC One Touch Switching",
             description: "Ofcom regulated project at Sky which is to do with the biggest broadband switching adjustment in the last decade",
@@ -85,10 +56,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="first">Software Engineering</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Business Analysis</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="third">Project Management</Nav.Link>
+                                    <Nav.Link eventKey="second">Sky</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -109,22 +77,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {
-                                            projectsBA.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                )
-                                            })
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="third">
-                                    <Row>
-                                        {
-                                            projectsPM.map((project, index) => {
+                                            projectsSky.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
